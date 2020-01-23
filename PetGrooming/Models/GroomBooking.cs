@@ -10,6 +10,11 @@ namespace PetGrooming.Models
 {
     public class GroomBooking
     {
+        [Key]
+        public int GroomBookingID { get; set; }
+        public DateTime GroomBookingDate { get; set; }
+        public decimal GroomBookingPrice { get; set; }
+
         /*
             A GroomBooking is an agreement between an owner and a groomer to provide services for a pet
             

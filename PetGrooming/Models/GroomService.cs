@@ -10,6 +10,13 @@ namespace PetGrooming.Models
 {
     public class GroomService
     {
+        [Key]
+        public int GroomServiceID { get; set; }
+        public string GroomServiceName { get; set; }
+        public decimal GroomServiceCost { get; set; }
+
+        //Described in minutes (ie. 120 minutes = 2 hours)
+        public int GroomServiceDur { get; set; }
         /*
             A GroomService is a type of activity that a Groomer can do for a pet. Some examples might be nail clipping, shampoo, trim, etc.
             
